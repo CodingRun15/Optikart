@@ -19,6 +19,22 @@
       rel="stylesheet"
     />
 
+    <!--Google Fonts Link for the Navbar Dropdown-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome link for icons -->
+
+    <script
+      src="https://kit.fontawesome.com/ce304c3157.js"
+      crossorigin="anonymous"
+    ></script>
+
     <style>
       /* Styling for wear the trend carousel */
 
@@ -61,14 +77,329 @@
         padding: 10px 0px 10px 0px;
         margin-top: 22px;
       }
-      
-      
+
+      /* Styling for Krishna's Design */
+
       .line {
         flex-grow: 1;
         height: 0.5px;
         background-color: rgb(219, 212, 212);
       }
 
+      /* This is to create hover effect in our dropdown menu */
+      .drop:hover .dropdown-menu {
+        display: block;
+        margin: 0%;
+      }
+
+      /* Styling for dropdown menu top options */
+      .drop > a {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 60px;
+      }
+
+      /* Setting the image size for the right image elements in nav bar dropdown */
+
+      #navDropRight img {
+        height: 40px;
+        width: 85px;
+      }
+
+      /* Giving background color to navBar */
+      #navBarDrop {
+        background-color: #fbf9f7;
+      }
+
+      /* Styling for heading, tagline, and button inside the dropdown menu with banner styles */
+
+      .dropPrimary h1 {
+        font-family: "Open Sans";
+        font-size: 40px;
+        line-height: 84px;
+        font-weight: 400;
+      }
+
+      .dropPrimary p {
+        font-family: "Open Sans";
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #000042;
+      }
+
+      .dropPrimary button {
+        text-align: center;
+        display: flex;
+        place-items: center;
+        margin: 10px 20px 0 0;
+        border: 0.8px solid rgb(0, 0, 66);
+        padding: 16px 22px;
+        width: auto;
+        height: 56px;
+        box-sizing: border-box;
+        background-color: white;
+        color: rgb(0, 0, 66);
+        border-radius: 28px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .dropPrimary button:hover {
+        background-color: rgb(0, 0, 66);
+        color: white;
+      }
+
+      /* Styling for kids glasses dropdown menu */
+
+      #kidsGlasses {
+        padding: 30px 0px;
+      }
+
+      #kidsGlasses h5 {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 13px;
+        color: #333333;
+        text-align: center;
+      }
+
+      #kidsGlasses a {
+        height: 280px;
+        width: 240px;
+        margin: 0 40px 0 40px;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+
+      #kidsGlasses .card {
+        height: 300px;
+        background-color: rgb(251, 251, 251);
+      }
+
+      #kidsGlasses img {
+        height: 150px;
+        width: 150px;
+      }
+
+      /* Setting the font for store locator city div */
+
+      #storeLocator #store-city a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+      }
+
+      /* Styling for the menu card in dropdown menu (dropGrid) */
+
+      /* Dropdown grid + rows and columns */
+
+      .dropGrid {
+        margin: 0%;
+        height: 445px;
+        width: 97vw;
+        padding-bottom: 30px;
+      }
+
+      .dropGrid > .row:nth-of-type(1) > .col {
+        padding: 20px 20px 0 20px;
+        height: 60px;
+        width: 302px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #000042;
+      }
+
+      .dropGrid > .row:nth-of-type(1) > .col:nth-of-type(2) {
+        padding: 20px 0 0 40px;
+      }
+
+      .dropGrid > .row:nth-of-type(2) > .col {
+        height: 15px;
+        width: 260px;
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .dropGrid > .row:nth-of-type(2) > .col:not(:nth-of-type(1)) {
+        border-top: 0.8px solid rgb(221, 221, 221);
+      }
+
+      .dropGrid > .row:nth-of-type(3) > .col {
+        padding: 0%;
+      }
+
+      .dropGrid > .row:nth-of-type(3) > .col:not(:nth-of-type(1)),
+      .dropGrid > .row:nth-of-type(3) > .col:not(:nth-of-type(2)) {
+        font-size: 14px;
+        color: #333333;
+        height: 75px;
+        width: 20px;
+        padding: 0px 20px;
+      }
+
+      .dropGrid
+        > .row:nth-of-type(3)
+        > :is(
+          .col:nth-of-type(3),
+          .col:nth-of-type(4),
+          .col:nth-of-type(5),
+          .col:nth-of-type(6)
+        )
+        > div
+        > div:hover {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .dropGrid
+        > .row:nth-of-type(3)
+        > :is(
+          .col:nth-of-type(3),
+          .col:nth-of-type(4),
+          .col:nth-of-type(5),
+          .col:nth-of-type(6)
+        )
+        > div
+        > div
+        > span:hover
+        + i {
+        display: inline-block;
+      }
+
+      .dropGrid
+        > .row:nth-of-type(3)
+        > :is(
+          .col:nth-of-type(3),
+          .col:nth-of-type(4),
+          .col:nth-of-type(5),
+          .col:nth-of-type(6)
+        )
+        i {
+        margin-top: 10px;
+        display: none;
+      }
+
+      /* Styling for gender box in dropGrid */
+
+      .genderBox {
+        padding: 10px 10px 10px 25px;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-left: 30px;
+        text-transform: uppercase;
+        height: 68px;
+        width: 230px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .genderBox:hover {
+        cursor: pointer;
+        background-color: rgb(242, 236, 230);
+      }
+
+      .genderBox > img {
+        padding: 0px;
+        max-height: 48px;
+        max-width: 48px;
+        margin: 0 12px 0 12px;
+      }
+
+      .genderBox > span {
+        width: 50%;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        padding: 0px;
+        height: 20px;
+        width: 97.5px;
+        color: #000042;
+        font-weight: 400;
+      }
+
+      /* Styling for category box in dropGrid */
+
+      .categoryBox {
+        padding: 16px 10px 16px 25px;
+        margin-left: 0px;
+        height: 68px;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .categoryBox:hover {
+        background-color: rgb(242, 236, 230);
+        cursor: pointer;
+      }
+
+      .categoryBox span {
+        font-size: 14px;
+      }
+
+      /* ContactLensDropDown Styling */
+
+      #contactLensDrop .row:nth-of-type(1) > .col:nth-of-type(2) {
+        padding: 20px 20px 0 20px;
+      }
+
+      #contactLensDrop .row:nth-of-type(2) > .col:nth-of-type(6) {
+        border: none;
+      }
+
+      #contactLensDrop .row:nth-of-type(2) > .col:nth-of-type(1) {
+        border-top: 0.8px solid rgb(221, 221, 221);
+      }
+
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(1) i,
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(2) i {
+        margin-top: 10px;
+        display: none;
+      }
+
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(1),
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(2) {
+        font-size: 14px;
+        color: #333333;
+        height: 75px;
+        width: 20px;
+        padding: 0px 20px;
+      }
+
+      #contactLensDrop
+        .row:nth-of-type(3)
+        > :is(.col:nth-of-type(1), .col:nth-of-type(2))
+        > div
+        > div:hover {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      #contactLensDrop
+        .row:nth-of-type(3)
+        > :is(.col:nth-of-type(1), .col:nth-of-type(2))
+        > div
+        > div
+        > span:hover
+        + i {
+        display: inline-block;
+      }
+
+      #contactLensDrop
+        .row:nth-of-type(3)
+        :is(.col:nth-of-type(1), .col:nth-of-type(2))
+        i {
+        margin-top: 10px;
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -82,6 +413,1102 @@
       navbar code here 
         
     -->
+
+    <!--NAV BAR DROP DOWN-->
+    <div
+      class="container-fluid d-flex justify-content-between align-items-center px-4"
+      id="navBarDrop"
+    >
+      <!--div 1 CONTAINING ALL THE OPTIONS ON LEFT-->
+      <li class="nav-item dropdown nav-underline d-flex">
+        <!--EYEGLASSES DROPDOWN-->
+
+        <div class="drop" id="eyeGlasses">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >EYEGLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--DropDown Menu Card for Eyeglasses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">SELECT CATEGORY</div>
+                <div class="col">Our Top Picks</div>
+                <div class="col">Frame Type</div>
+                <div class="col">Collection</div>
+                <div class="col">Brands</div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Gender Boxes-->
+
+                <div class="col">
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                      alt="men"
+                    />
+                    <span>Men </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                      alt="women"
+                    />
+                    <span>Women </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/kid_pic.png"
+                      alt="kid"
+                    />
+                    <span>kids </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Category Boxes-->
+
+                <div class="col">
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>CLASSIC EYE GLASSES</span>
+                      <span>Starting from &#8377; 1200</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>PREMIUM EYE GLASSES</span>
+                      <span>Starting from &#8377; 3000</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>COMPUTER EYE GLASSES</span>
+                      <span>Starting from &#8377; 500</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Top Picks-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Arrivals</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Best Sellers</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>LensKart BLU Lenses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Trending</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Computer Eyeglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Tinted Eyeglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Progressive Eyeglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Frame types-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rectangle Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Wayfarer Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Round Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aviator Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Cat-Eye Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rimless Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Half-Rim Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Geometric Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Collection-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Switch Grip</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Air Essentials</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Urban Edit</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Blend Edit</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Sleek Steel</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Switch-Magnetic Clips-On</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Air Flex</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Air Wrap</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Classic Acetate</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Brands-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Vincent Chase</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Lenskart Air</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>John Jacobs</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>OJOS</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>New Balance</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Lenskart Studio</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Fossil</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--COMPUTER GLASSES DROPDOWN-->
+
+        <div class="drop" id="computerGlasses">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >COMPUTER GLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0"
+          >
+            <!--Dropdown Menu Card for Computer Glasses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">SELECT CATEGORY</div>
+                <div class="col">Our Top Picks</div>
+                <div class="col">Frame Type</div>
+                <div class="col">Collection</div>
+                <div class="col">Brands</div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Gender Boxes-->
+
+                <div class="col">
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                      alt="men"
+                    />
+                    <span>Men </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                      alt="women"
+                    />
+                    <span>Women </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/kid_pic.png"
+                      alt="kid"
+                    />
+                    <span>kids </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Category Boxes-->
+
+                <div class="col">
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>BLU 0 COMPUTER GLASSES</span>
+                      <span>Starting from &#8377; 500</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Empty Columns to Maintain Column Width-->
+
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--KIDS GLASSES DROPDOWN-->
+
+        <div class="drop">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >KIDS GLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; padding-bottom: 100px"
+          >
+            <div
+              class="card-group justify-content-center align-items-center"
+              id="kidsGlasses"
+            >
+              <a href="#">
+                <div
+                  class="card justify-content-center align-items-center pt-5 border-0"
+                >
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/May22/glasses.jpg"
+                    class="card-img-top"
+                    alt="image"
+                  />
+                  <div class="card-body" style="margin-top: 10px">
+                    <h5 class="card-title">Eyeglasses</h5>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div
+                  class="card justify-content-center align-items-center pt-5 border-0"
+                >
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/May22/computer-glasses.jpg"
+                    class="card-img-top"
+                    alt="image"
+                  />
+                  <div class="card-body" style="margin-top: 10px">
+                    <h5 class="card-title">Zero Power Computer Glasses</h5>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div
+                  class="card justify-content-center align-items-center pt-5 border-0"
+                >
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/May22/Sunnies.jpg"
+                    class="card-img-top"
+                    alt="image"
+                  />
+                  <div class="card-body" style="margin-top: 10px">
+                    <h5 class="card-title">Sunglasses</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <!--CONTACT LENSES DROPDOWN-->
+
+        <div class="drop" id="contactLensDrop">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >CONTACT LENSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--Dropdown Menu Card for Contact Lenses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col">Brands</div>
+                <div class="col">Explore By Disposablity</div>
+                <div class="col">Explore By Power</div>
+                <div class="col">Explore By Color</div>
+                <div class="col">Solution</div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Brands-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aqualens</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Bausch Lombs</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Soflens</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Acuvue</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Iconnect</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Alcon</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore by Disposablity-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Monthly</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Day and Night</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Daily</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Yearly</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Bi-Weekly</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore By Power-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Spherical - (CYL&#60;0.5)</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Spherical + (CYL&#60;0.5)</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Cylindrical Power(&#62;0.75)</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Toric Power</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore By Color-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Green</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Blue</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Brown</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Turqouise</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Explore All Colors</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore By Color-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Small</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Large</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>View All Solutions</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Empty Column to Maintain Width-->
+
+                <div class="col"></div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--SUNGLASSES DROPDOWN-->
+
+        <div class="drop">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >SUNGLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--Dropdown Menu card for Sunglasses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">SELECT CATEGORY</div>
+                <div class="col">Our Top Picks</div>
+                <div class="col">Shape</div>
+                <div class="col">Collection</div>
+                <div class="col">Brands</div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Gender Boxes-->
+
+                <div class="col">
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                      alt="men"
+                    />
+                    <span>Men </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                      alt="women"
+                    />
+                    <span>Women </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Category Boxes-->
+
+                <div class="col">
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>CLASSIC SUNGLASSES</span>
+                      <span>Starting from &#8377; 1000</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>PREMIUM SUNGLASSES</span>
+                      <span>Starting from &#8377; 2500</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Top Picks-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Best Sellers</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>New Arrivals</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Power Sunglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Shape-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aviators</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rounders</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Wayfarer</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rectangle</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Hexagon</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Cat-Eye</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Clubmaster</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Collection-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Mavericks</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Fashion Essentials</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aerodynamics</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Grand Slam</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Havana</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Polarised</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Power Sunglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Designer Sunglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Brands-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Vincent Chase</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>John Jacobs</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>OJOS</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--HOME EYE TEST DROPDOWN-->
+
+        <div class="drop" id="homeEyeTest">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >HOME-EYE TEST</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--Here we have created a new menu for store locator-->
+            <div
+              class="d-flex justify-content-between"
+              style="height: 100%; width: 100%"
+            >
+              <!--First div contains the banner image for home eye test with link-->
+              <div id="home-test" style="width: 100%; height: 425px">
+                <a href="#">
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png"
+                    alt="homeEyeTest.png"
+                  />
+                </a>
+              </div>
+
+              <!--Second div contains the heading, tag line, and book appointment for the home eye test button-->
+              <div
+                style="width: 100%; margin: auto; padding-right: 35px"
+                class="dropPrimary d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <h1>Get your eyes checked at home</h1>
+                <p>
+                  A certified refractionist will visit you with latest eye
+                  testing machines &amp; 100 trial frames
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Book appointment
+                </button>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--STORE LOCATOR DROP DOWN-->
+
+        <div class="drop" id="storeLocator">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >STORE LOCATOR</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0"
+          >
+            <!--Here we have created a new menu for store locator-->
+            <div
+              class="d-flex justify-content-between p-5"
+              style="height: 100%"
+            >
+              <!--First div contains the heading, tag line, and store locator button-->
+              <div
+                style="width: 100%; margin-bottom: 100px"
+                class="dropPrimary d-flex flex-column justify-content-start align-items-center text-center"
+              >
+                <h1>OVER 1100+ LENSKART STORE</h1>
+                <p>
+                  Experience Eyewear in a whole new way: Visit your nearest
+                  store and treat yourself to 5000+ eyewear styles.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Locate a Store
+                </button>
+              </div>
+              <!--Second div contains 7 images with links-->
+              <div
+                id="store-city"
+                class="d-flex text-center justify-content-end align-items-start gap-3 text-center"
+                style="width: 100%; padding-top: 75px"
+              >
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Delhi1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Delhi</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Banglore1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Bangalore</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Mumbai1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Mumbai</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Ahmedabad1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Ahemdabad</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Chennai1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Chennai</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Hyderabad1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Hyderabad</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Cities1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>1100+ cities</p>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </li>
+
+      <!--DIV 2 CONTAINING THE IMAGES ON RIGHT-->
+
+      <div id="navDropRight" class="d-flex gap-3">
+        <!--Each anchor tag contains an image-->
+        <a href="#">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
+            alt="3D.png"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
+            alt="blu.png"
+          />
+        </a>
+
+        <a href="#"
+          ><img
+            src="https://static5.lenskart.com/media/uploads/gold_max_logo_dc.png"
+            alt="gold.png"
+        /></a>
+      </div>
+    </div>
 
     <!-- 
         
@@ -546,16 +1973,35 @@
     </div>
 
     <!-- karan johar code -->
-    
-    <div class="container-mt-5" style="width: 100%; margin-top: 5%; margin-bottom: 5%;">
+
+    <div
+      class="container-mt-5"
+      style="width: 100%; margin-top: 5%; margin-bottom: 5%"
+    >
       <div class="col-md-12">
-        <div class="title-wrapper" style="display: flex; align-items: center;padding-left: 3%;padding-right: 3%;margin-bottom: 3%;">
+        <div
+          class="title-wrapper"
+          style="
+            display: flex;
+            align-items: center;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-bottom: 3%;
+          "
+        >
           <div class="line"></div>
-          <div class="title" style=" font-size: 30px;
-          font-family: Condensed, sans-serif;
-          font-weight: 400;
-          padding-left: 1%;
-          padding-right: 1%;">AS SEEN ON KARAN JOHAR</div>
+          <div
+            class="title"
+            style="
+              font-size: 30px;
+              font-family: Condensed, sans-serif;
+              font-weight: 400;
+              padding-left: 1%;
+              padding-right: 1%;
+            "
+          >
+            AS SEEN ON KARAN JOHAR
+          </div>
           <div class="line"></div>
         </div>
       </div>
@@ -563,22 +2009,41 @@
       <a class="karan" href="#"
         ><img
           src="https://static1.lenskart.com/media/desktop/img/Dec22/Web_banner.gif"
-          alt="" style="height: 100%; width: 100%;"
+          alt=""
+          style="height: 100%; width: 100%"
       /></a>
     </div>
-    
-    
+
     <!-- trending sunglasses code-->
-    
-    <div class="container-mt-5" style="width: 100%; margin-top: 5%; margin-bottom: 5%;">
+
+    <div
+      class="container-mt-5"
+      style="width: 100%; margin-top: 5%; margin-bottom: 5%"
+    >
       <div class="col-md-12">
-        <div class="title-wrapper" style="display: flex; align-items: center;padding-left: 3%;padding-right: 3%;margin-bottom: 3%;">
+        <div
+          class="title-wrapper"
+          style="
+            display: flex;
+            align-items: center;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-bottom: 3%;
+          "
+        >
           <div class="line"></div>
-          <div class="title" style=" font-size: 30px;
-          font-family: Condensed, sans-serif;
-          font-weight: 400;
-          padding-left: 1%;
-          padding-right: 1%;">TRENDING SUNGLASSES</div>
+          <div
+            class="title"
+            style="
+              font-size: 30px;
+              font-family: Condensed, sans-serif;
+              font-weight: 400;
+              padding-left: 1%;
+              padding-right: 1%;
+            "
+          >
+            TRENDING SUNGLASSES
+          </div>
           <div class="line"></div>
         </div>
       </div>
@@ -586,12 +2051,13 @@
       <a class="karan" href="#"
         ><img
           src="https://static1.lenskart.com/media/desktop/img/Jan23/sunglasses/Sun-Banner-web.gif"
-          alt="" style="height: 100%; width: 100%;"       
+          alt=""
+          style="height: 100%; width: 100%"
       /></a>
     </div>
-    
+
     <!--Ojos Banner Code-->
-    
+
     <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
       <div
         class="d-flex justify-content-center align-items-center mt-5"
@@ -630,9 +2096,9 @@
         src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/ojos%20banner/ojos%20banner/web%20banner/ojos-web-1199.gif"
         style="width: 100%"
     /></a>
-    
+
     <!--AquaColor Code-->
-    
+
     <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
       <div
         class="d-flex justify-content-center align-items-center mt-5"
@@ -1049,13 +2515,11 @@
 
              -->
 
-
     <!--
 
 
                 with zero power carousel code here 
               -->
-
 
     <!-- 
                
