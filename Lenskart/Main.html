@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lenskart</title>
+    <title>OptiKart</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,6 +18,22 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!--Google Fonts Link for the Navbar Dropdown-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome link for icons -->
+
+    <script
+      src="https://kit.fontawesome.com/ce304c3157.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
       /* Styling for wear the trend carousel */
@@ -61,31 +77,1569 @@
         padding: 10px 0px 10px 0px;
         margin-top: 22px;
       }
+
+      /* Styling for Krishna's Design */
+
+      .line {
+        flex-grow: 1;
+        height: 0.5px;
+        background-color: rgb(219, 212, 212);
+      }
+
+      /* This is to create hover effect in our dropdown menu */
+      .drop:hover .dropdown-menu {
+        display: block;
+        margin: 0%;
+      }
+
+      /* Styling for dropdown menu top options */
+      .drop > a {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 60px;
+      }
+
+      /* Setting the image size for the right image elements in nav bar dropdown */
+
+      #navDropRight img {
+        height: 40px;
+        width: 85px;
+      }
+
+      /* Giving background color to navBar */
+      #navBarDrop {
+        background-color: #fbf9f7;
+      }
+
+      /* Styling for heading, tagline, and button inside the dropdown menu with banner styles */
+
+      .dropPrimary h1 {
+        font-family: "Open Sans";
+        font-size: 40px;
+        line-height: 84px;
+        font-weight: 400;
+      }
+
+      .dropPrimary p {
+        font-family: "Open Sans";
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #000042;
+      }
+
+      .dropPrimary button {
+        text-align: center;
+        display: flex;
+        place-items: center;
+        margin: 10px 20px 0 0;
+        border: 0.8px solid rgb(0, 0, 66);
+        padding: 16px 22px;
+        width: auto;
+        height: 56px;
+        box-sizing: border-box;
+        background-color: white;
+        color: rgb(0, 0, 66);
+        border-radius: 28px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .dropPrimary button:hover {
+        background-color: rgb(0, 0, 66);
+        color: white;
+      }
+
+      /* Styling for kids glasses dropdown menu */
+
+      #kidsGlasses {
+        padding: 30px 0px;
+      }
+
+      #kidsGlasses h5 {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 13px;
+        color: #333333;
+        text-align: center;
+      }
+
+      #kidsGlasses a {
+        height: 280px;
+        width: 240px;
+        margin: 0 40px 0 40px;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+
+      #kidsGlasses .card {
+        height: 300px;
+        background-color: rgb(251, 251, 251);
+      }
+
+      #kidsGlasses img {
+        height: 150px;
+        width: 150px;
+      }
+
+      /* Setting the font for store locator city div */
+
+      #storeLocator #store-city a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        color: black;
+      }
+
+      /* Styling for the menu card in dropdown menu (dropGrid) */
+
+      /* Dropdown grid + rows and columns */
+
+      .dropGrid {
+        margin: 0%;
+        height: 445px;
+        width: 97vw;
+        padding-bottom: 30px;
+      }
+
+      .dropGrid > .row:nth-of-type(1) > .col {
+        padding: 20px 20px 0 20px;
+        height: 60px;
+        width: 302px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #000042;
+      }
+
+      .dropGrid > .row:nth-of-type(1) > .col:nth-of-type(2) {
+        padding: 20px 0 0 40px;
+      }
+
+      .dropGrid > .row:nth-of-type(2) > .col {
+        height: 15px;
+        width: 260px;
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .dropGrid > .row:nth-of-type(2) > .col:not(:nth-of-type(1)) {
+        border-top: 0.8px solid rgb(221, 221, 221);
+      }
+
+      .dropGrid > .row:nth-of-type(3) > .col {
+        padding: 0%;
+      }
+
+      .dropGrid > .row:nth-of-type(3) > .col:not(:nth-of-type(1)),
+      .dropGrid > .row:nth-of-type(3) > .col:not(:nth-of-type(2)) {
+        font-size: 14px;
+        color: #333333;
+        height: 75px;
+        width: 20px;
+        padding: 0px 20px;
+      }
+
+      .dropGrid
+        > .row:nth-of-type(3)
+        > :is(
+          .col:nth-of-type(3),
+          .col:nth-of-type(4),
+          .col:nth-of-type(5),
+          .col:nth-of-type(6)
+        )
+        > div
+        > div:hover {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .dropGrid
+        > .row:nth-of-type(3)
+        > :is(
+          .col:nth-of-type(3),
+          .col:nth-of-type(4),
+          .col:nth-of-type(5),
+          .col:nth-of-type(6)
+        )
+        > div
+        > div
+        > span:hover
+        + i {
+        display: inline-block;
+      }
+
+      .dropGrid
+        > .row:nth-of-type(3)
+        > :is(
+          .col:nth-of-type(3),
+          .col:nth-of-type(4),
+          .col:nth-of-type(5),
+          .col:nth-of-type(6)
+        )
+        i {
+        margin-top: 10px;
+        display: none;
+      }
+
+      /* Styling for gender box in dropGrid */
+
+      .genderBox {
+        padding: 10px 10px 10px 25px;
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-left: 30px;
+        text-transform: uppercase;
+        height: 68px;
+        width: 230px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .genderBox:hover {
+        cursor: pointer;
+        background-color: rgb(242, 236, 230);
+      }
+
+      .genderBox > img {
+        padding: 0px;
+        max-height: 48px;
+        max-width: 48px;
+        margin: 0 12px 0 12px;
+      }
+
+      .genderBox > span {
+        width: 50%;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        padding: 0px;
+        height: 20px;
+        width: 97.5px;
+        color: #000042;
+        font-weight: 400;
+      }
+
+      /* Styling for category box in dropGrid */
+
+      .categoryBox {
+        padding: 16px 10px 16px 25px;
+        margin-left: 0px;
+        height: 68px;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .categoryBox:hover {
+        background-color: rgb(242, 236, 230);
+        cursor: pointer;
+      }
+
+      .categoryBox span {
+        font-size: 14px;
+      }
+
+      /* ContactLensDropDown Styling */
+
+      #contactLensDrop .row:nth-of-type(1) > .col:nth-of-type(2) {
+        padding: 20px 20px 0 20px;
+      }
+
+      #contactLensDrop .row:nth-of-type(2) > .col:nth-of-type(6) {
+        border: none;
+      }
+
+      #contactLensDrop .row:nth-of-type(2) > .col:nth-of-type(1) {
+        border-top: 0.8px solid rgb(221, 221, 221);
+      }
+
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(1) i,
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(2) i {
+        margin-top: 10px;
+        display: none;
+      }
+
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(1),
+      #contactLensDrop .row:nth-of-type(3) > .col:nth-of-type(2) {
+        font-size: 14px;
+        color: #333333;
+        height: 75px;
+        width: 20px;
+        padding: 0px 20px;
+      }
+
+      #contactLensDrop
+        .row:nth-of-type(3)
+        > :is(.col:nth-of-type(1), .col:nth-of-type(2))
+        > div
+        > div:hover {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      #contactLensDrop
+        .row:nth-of-type(3)
+        > :is(.col:nth-of-type(1), .col:nth-of-type(2))
+        > div
+        > div
+        > span:hover
+        + i {
+        display: inline-block;
+      }
+
+      #contactLensDrop
+        .row:nth-of-type(3)
+        :is(.col:nth-of-type(1), .col:nth-of-type(2))
+        i {
+        margin-top: 10px;
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <!-- 
-    
-    header code here  
-    
-    -->
-    <!-- 
-
-      navbar code here 
+    <!-- header and Nav bar Code -->
+      <nav class="navbar bg-white" style="position: fixed; top: 0;width: 100%;">
+      <div class="container-fluid mx-4">
+        <div class="headerTop d-flex gap-2 justify-content-center align-items-center">
+          <a href="#" style="text-decoration: none;font-size: 10px; color: #000042;">Do More Be More</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">TryIn3D</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">StoreLocator</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">Singapore</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">UAE</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">John Jacobs</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">Aqualens</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">Cobrowsing</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">Engineering Blog</a>
+          <p style="height: 10px;">|</p>
+          <a href="#" style="text-decoration: none;font-size: 10px;color: #000042;">OptiKart Frenchise</a>
+        </div>
+         <div style="font-size: 10px ;width: 5%;">
+          <a style="text-decoration: none; color: black;;" href="#" >Contact Us</a>
+         </div>
+      </div>
+      </div>
+      </nav>
+      <!-- bottom Header -->
+      
+      
+          <div class="container-fluid mx-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Optikart_logo.jpg"
+              alt="OptikartLogo"
+              width="100px"
+              height="40px"
+            />
+          </a>
         
-    -->
+        <div class="d-flex align-items-center">
+          <img
+            src="https://static5.lenskart.com/media/uploads/lenskart-helpline-number-new-9999899998-desktop.png"
+            class="img-fluid me-4"
+            alt="Contact Image"
+            width="100px"
+            height="40px"
+          />
+          <!-- Search Bar -->
+          <form action="">
+            <input
+              class="ps-2"
+              type="search"
+              placeholder="What are you looking for?"
+              aria-label="What are you looking for?"
+              style="
+                width: 550px;
+                height: 30px;
+                outline: none;
+                border: 1px solid #a4a4b3;
+                border-radius: 5px;
+              "
+            />
+          </form>
+          <div class="headerBottom d-flex mt-3 gap-3 ms-5">
+            <a href="#"><p class="p-0">Track Order</p></a>
+            <a href="#"><p class="p-0">Sign In $ Sign Up</p></a>
+            <a class="d-flex align-items-center" href="#"
+              ><p class="p-0 me-2">
+                <i class="fa-regular fa-heart"></i>
+              </p>
+              <p class="p-0">Wishlist</p></a
+            >
+            <a class="d-flex align-items-center" href="#"
+              ><p class="p-0 me-2"><i class="fa-solid fa-cart-shopping"></i></p>
+              <p class="p-0">Cart</p></a
+            >
+            </div>
+           </div>
+           </div>
+    <!--NAV BAR DROP DOWN-->
+    <div
+      class="container-fluid d-flex justify-content-between align-items-center px-4 sticky-top"
+      id="navBarDrop"
+    >
+      <!--div 1 CONTAINING ALL THE OPTIONS ON LEFT-->
+      <li class="nav-item dropdown nav-underline d-flex">
+        <!--EYEGLASSES DROPDOWN-->
+
+        <div class="drop" id="eyeGlasses">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >EYEGLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--DropDown Menu Card for Eyeglasses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">SELECT CATEGORY</div>
+                <div class="col">Our Top Picks</div>
+                <div class="col">Frame Type</div>
+                <div class="col">Collection</div>
+                <div class="col">Brands</div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Gender Boxes-->
+
+                <div class="col">
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                      alt="men"
+                    />
+                    <span>Men </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                      alt="women"
+                    />
+                    <span>Women </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/kid_pic.png"
+                      alt="kid"
+                    />
+                    <span>kids </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Category Boxes-->
+
+                <div class="col">
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>CLASSIC EYE GLASSES</span>
+                      <span>Starting from &#8377; 1200</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>PREMIUM EYE GLASSES</span>
+                      <span>Starting from &#8377; 3000</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>COMPUTER EYE GLASSES</span>
+                      <span>Starting from &#8377; 500</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Top Picks-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Arrivals</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Best Sellers</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>LensKart BLU Lenses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Trending</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Computer Eyeglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Tinted Eyeglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Progressive Eyeglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Frame types-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rectangle Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Wayfarer Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Round Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aviator Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Cat-Eye Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rimless Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Half-Rim Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Geometric Frames</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Collection-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Switch Grip</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Air Essentials</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Urban Edit</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Blend Edit</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Sleek Steel</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Switch-Magnetic Clips-On</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Air Flex</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Air Wrap</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Classic Acetate</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Brands-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Vincent Chase</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Lenskart Air</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>John Jacobs</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>OJOS</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>New Balance</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Lenskart Studio</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Fossil</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--COMPUTER GLASSES DROPDOWN-->
+
+        <div class="drop" id="computerGlasses">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >COMPUTER GLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0"
+          >
+            <!--Dropdown Menu Card for Computer Glasses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">SELECT CATEGORY</div>
+                <div class="col">Our Top Picks</div>
+                <div class="col">Frame Type</div>
+                <div class="col">Collection</div>
+                <div class="col">Brands</div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Gender Boxes-->
+
+                <div class="col">
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                      alt="men"
+                    />
+                    <span>Men </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                      alt="women"
+                    />
+                    <span>Women </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/kid_pic.png"
+                      alt="kid"
+                    />
+                    <span>kids </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Category Boxes-->
+
+                <div class="col">
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>BLU 0 COMPUTER GLASSES</span>
+                      <span>Starting from &#8377; 500</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Empty Columns to Maintain Column Width-->
+
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--KIDS GLASSES DROPDOWN-->
+
+        <div class="drop">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >KIDS GLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; padding-bottom: 100px"
+          >
+            <div
+              class="card-group justify-content-center align-items-center"
+              id="kidsGlasses"
+            >
+              <a href="#">
+                <div
+                  class="card justify-content-center align-items-center pt-5 border-0"
+                >
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/May22/glasses.jpg"
+                    class="card-img-top"
+                    alt="image"
+                  />
+                  <div class="card-body" style="margin-top: 10px">
+                    <h5 class="card-title">Eyeglasses</h5>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div
+                  class="card justify-content-center align-items-center pt-5 border-0"
+                >
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/May22/computer-glasses.jpg"
+                    class="card-img-top"
+                    alt="image"
+                  />
+                  <div class="card-body" style="margin-top: 10px">
+                    <h5 class="card-title">Zero Power Computer Glasses</h5>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div
+                  class="card justify-content-center align-items-center pt-5 border-0"
+                >
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/May22/Sunnies.jpg"
+                    class="card-img-top"
+                    alt="image"
+                  />
+                  <div class="card-body" style="margin-top: 10px">
+                    <h5 class="card-title">Sunglasses</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <!--CONTACT LENSES DROPDOWN-->
+
+        <div class="drop" id="contactLensDrop">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >CONTACT LENSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--Dropdown Menu Card for Contact Lenses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col">Brands</div>
+                <div class="col">Explore By Disposablity</div>
+                <div class="col">Explore By Power</div>
+                <div class="col">Explore By Color</div>
+                <div class="col">Solution</div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Brands-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aqualens</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Bausch Lombs</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Soflens</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Acuvue</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Iconnect</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Alcon</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore by Disposablity-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Monthly</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Day and Night</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Daily</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Yearly</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Bi-Weekly</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore By Power-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Spherical - (CYL&#60;0.5)</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Spherical + (CYL&#60;0.5)</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Cylindrical Power(&#62;0.75)</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Toric Power</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore By Color-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Green</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Blue</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Brown</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Turqouise</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Explore All Colors</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Explore By Color-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2 mt-3">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Small</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Large</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>View All Solutions</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Empty Column to Maintain Width-->
+
+                <div class="col"></div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--SUNGLASSES DROPDOWN-->
+
+        <div class="drop">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >SUNGLASSES</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--Dropdown Menu card for Sunglasses-->
+
+            <div class="container-fluid dropGrid">
+              <!--ROW 1 TITLES-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">SELECT CATEGORY</div>
+                <div class="col">Our Top Picks</div>
+                <div class="col">Shape</div>
+                <div class="col">Collection</div>
+                <div class="col">Brands</div>
+              </div>
+
+              <!--ROW 2 DIVIDER-->
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+
+              <!--ROW 3 CONTENT-->
+              <div class="row">
+                <!--Gender Boxes-->
+
+                <div class="col">
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/men_pic.png"
+                      alt="men"
+                    />
+                    <span>Men </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                  <div class="genderBox">
+                    <img
+                      src="https://static.lenskart.com/media/desktop/img/women_pic.png"
+                      alt="women"
+                    />
+                    <span>Women </span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Category Boxes-->
+
+                <div class="col">
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>CLASSIC SUNGLASSES</span>
+                      <span>Starting from &#8377; 1000</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+
+                  <div class="categoryBox">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span>PREMIUM SUNGLASSES</span>
+                      <span>Starting from &#8377; 2500</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                  </div>
+                </div>
+
+                <!--Top Picks-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Best Sellers</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>New Arrivals</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Power Sunglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Shape-->
+
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aviators</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rounders</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Wayfarer</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Rectangle</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Hexagon</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Cat-Eye</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Clubmaster</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Collection-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Mavericks</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Fashion Essentials</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Aerodynamics</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Grand Slam</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Havana</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Polarised</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Power Sunglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Designer Sunglasses</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Brands-->
+                <div class="col">
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>Vincent Chase</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>John Jacobs</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                    <div
+                      class="icon-link icon-link-hover d-flex align-items-center"
+                    >
+                      <span>OJOS</span>
+                      <i class="bi fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--HOME EYE TEST DROPDOWN-->
+
+        <div class="drop" id="homeEyeTest">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >HOME-EYE TEST</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0; margin: 0; padding: 0%"
+          >
+            <!--Here we have created a new menu for store locator-->
+            <div
+              class="d-flex justify-content-between"
+              style="height: 100%; width: 100%"
+            >
+              <!--First div contains the banner image for home eye test with link-->
+              <div id="home-test" style="width: 100%; height: 425px">
+                <a href="#">
+                  <img
+                    src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png"
+                    alt="homeEyeTest.png"
+                  />
+                </a>
+              </div>
+
+              <!--Second div contains the heading, tag line, and book appointment for the home eye test button-->
+              <div
+                style="width: 100%; margin: auto; padding-right: 35px"
+                class="dropPrimary d-flex flex-column justify-content-center align-items-center text-center"
+              >
+                <h1>Get your eyes checked at home</h1>
+                <p>
+                  A certified refractionist will visit you with latest eye
+                  testing machines &amp; 100 trial frames
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Book appointment
+                </button>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <!--STORE LOCATOR DROP DOWN-->
+
+        <div class="drop" id="storeLocator">
+          <a
+            class="nav-link underline text-primary-emphasis"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >STORE LOCATOR</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end rounded-0"
+            style="width: 97vw; left: 0; right: 0"
+          >
+            <!--Here we have created a new menu for store locator-->
+            <div
+              class="d-flex justify-content-between p-5"
+              style="height: 100%"
+            >
+              <!--First div contains the heading, tag line, and store locator button-->
+              <div
+                style="width: 100%; margin-bottom: 100px"
+                class="dropPrimary d-flex flex-column justify-content-start align-items-center text-center"
+              >
+                <h1>OVER 1100+ LENSKART STORE</h1>
+                <p>
+                  Experience Eyewear in a whole new way: Visit your nearest
+                  store and treat yourself to 5000+ eyewear styles.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  Locate a Store
+                </button>
+              </div>
+              <!--Second div contains 7 images with links-->
+              <div
+                id="store-city"
+                class="d-flex text-center justify-content-end align-items-start gap-3 text-center"
+                style="width: 100%; padding-top: 75px"
+              >
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Delhi1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Delhi</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Banglore1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Bangalore</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Mumbai1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Mumbai</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Ahmedabad1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Ahemdabad</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Chennai1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Chennai</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Hyderabad1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>Hyderabad</p>
+                </a>
+                <a href="#">
+                  <img
+                    src="https://static.lenskart.com/media/desktop/img/Cities1.png"
+                    alt="Delhi.png"
+                  />
+                  <p>1100+ cities</p>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </li>
+
+      <!--DIV 2 CONTAINING THE IMAGES ON RIGHT-->
+
+      <div id="navDropRight" class="d-flex gap-3">
+        <!--Each anchor tag contains an image-->
+        <a href="#">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
+            alt="3D.png"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
+            alt="blu.png"
+          />
+        </a>
+
+        <a href="#"
+          ><img
+            src="https://static5.lenskart.com/media/uploads/gold_max_logo_dc.png"
+            alt="gold.png"
+        /></a>
+      </div>
+    </div>
 
     <!-- 
         
-        header cards code here
-    
-    -->
+        header cards code here  -->
+        <div class="row row-cols-1 row-cols-md-6 g-4" style="margin-top:0px;margin-bottom:1%;">
+          <div class="col">
+            <div class="card h-70">
+              <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" class="card-img-top" alt="..."></a>
+              <div class="card-footer">
+                <p class="text-center">Eyeglasses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-70">
+              <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" class="card-img-top" alt="..."></a>
+              <div class="card-footer">
+                <p class="text-center">Sunglasses</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-70">
+              <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" class="card-img-top" alt="..."></a>
+              
+              <div class="card-footer">
+                <p class="text-center">Computer Glasses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-70">
+              <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/Apr22/d.png" class="card-img-top" alt="..."></a>
+            
+              <div class="card-footer">
+                <p class="text-center">Contact Lenses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-70">
+             <a href="#" ><img src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" class="card-img-top" alt="..."></a>
+              
+              <div class="card-footer">
+                <p class="text-center">Power Sunglasses</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-70">
+              <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-footer">
+                <p class="text-center">Progressive Lenses</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- 
-        
-        Gold rush image code here 
-    
-    -->
+    <!--  Gold rush image here -->
 
     <div>
       <a href="#"
@@ -537,91 +2091,92 @@
       /></a>
     </div>
 
-    <!-- 
-        as seen on shark tank code
-       -->
+    <!-- karan johar code -->
 
-    <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
-      <div
-        class="d-flex justify-content-center align-items-center mt-5"
-        style="
-          height: 1px;
-          width: 100%;
-          background-color: rgb(160, 160, 160);
+    <div
+      class="container-mt-5"
+      style="width: 100%; margin-top: 5%; margin-bottom: 5%"
+    >
+      <div class="col-md-12">
+        <div
+          class="title-wrapper"
+          style="
+            display: flex;
+            align-items: center;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-bottom: 3%;
+          "
+        >
+          <div class="line"></div>
+          <div
+            class="title"
+            style="
+              font-size: 30px;
+              font-family: Condensed, sans-serif;
+              font-weight: 400;
+              padding-left: 1%;
+              padding-right: 1%;
+            "
+          >
+            AS SEEN ON KARAN JOHAR
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
 
-          width: 50%;
-        "
-      ></div>
-
-      <h2
-        style="
-          text-align: center;
-          margin-top: 27px;
-          font-weight: 400;
-
-          font-size: 25px;
-          white-space: nowrap;
-        "
-      >
-        AS SEEN ON KARAN JOHAR
-      </h2>
-
-      <div
-        class="border-bottom-primary mt-5"
-        style="
-          height: 1px;
-          width: 100%;
-          background-color: rgb(160, 160, 160);
-
-          width: 50%;
-        "
-      ></div>
+      <a class="karan" href="#"
+        ><img
+          src="https://static1.lenskart.com/media/desktop/img/Dec22/Web_banner.gif"
+          alt=""
+          style="height: 100%; width: 100%"
+      /></a>
     </div>
 
-    <a href="#"
-      ><img
-        src="https://static1.lenskart.com/media/desktop/img/Dec22/Web_banner.gif"
-        style="width: 100%"
-    /></a>
-    <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
-      <div
-        class="d-flex justify-content-center align-items-center mt-5"
-        style="
-          height: 1px;
-          width: 100%;
-          background-color: rgb(160, 160, 160);
-          width: 50%;
-        "
-      ></div>
+    <!-- trending sunglasses code-->
 
-      <h2
-        style="
-          text-align: center;
-          margin-top: 27px;
-          font-weight: 400;
-          font-size: 25px;
-          white-space: nowrap;
-        "
-      >
-        TRENDING SUNGLASSES
-      </h2>
+    <div
+      class="container-mt-5"
+      style="width: 100%; margin-top: 5%; margin-bottom: 5%"
+    >
+      <div class="col-md-12">
+        <div
+          class="title-wrapper"
+          style="
+            display: flex;
+            align-items: center;
+            padding-left: 3%;
+            padding-right: 3%;
+            margin-bottom: 3%;
+          "
+        >
+          <div class="line"></div>
+          <div
+            class="title"
+            style="
+              font-size: 30px;
+              font-family: Condensed, sans-serif;
+              font-weight: 400;
+              padding-left: 1%;
+              padding-right: 1%;
+            "
+          >
+            TRENDING SUNGLASSES
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
 
-      <div
-        class="border-bottom-primary mt-5"
-        style="
-          height: 1px;
-          width: 100%;
-          background-color: rgb(160, 160, 160);
-          width: 50%;
-        "
-      ></div>
+      <a class="karan" href="#"
+        ><img
+          src="https://static1.lenskart.com/media/desktop/img/Jan23/sunglasses/Sun-Banner-web.gif"
+          alt=""
+          style="height: 100%; width: 100%"
+      /></a>
     </div>
 
-    <a href="#"
-      ><img
-        src="https://static1.lenskart.com/media/desktop/img/Jan23/sunglasses/Sun-Banner-web.gif"
-        style="width: 100%"
-    /></a>
+    <!--Ojos Banner Code-->
+
     <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
       <div
         class="d-flex justify-content-center align-items-center mt-5"
@@ -660,6 +2215,9 @@
         src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/ojos%20banner/ojos%20banner/web%20banner/ojos-web-1199.gif"
         style="width: 100%"
     /></a>
+
+    <!--AquaColor Code-->
+
     <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
       <div
         class="d-flex justify-content-center align-items-center mt-5"
@@ -700,11 +2258,235 @@
         alt=""
     /></a>
 
+    <!--Find The Perfect Fit Code -->
+
+    <div id="perfectFit">
+      <!--2 DIVS : 
+            1. Heading
+            2. Cards-->
+
+      <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
+        <!--3 ELEMENTS : 
+                  1. Line
+                  2. Heading
+                  3. Line-->
+        <div
+          class="border-bottom-primary mt-5"
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: rgb(160, 160, 160);
+            width: 35%;
+          "
+        ></div>
+
+        <h2
+          style="
+            text-align: center;
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 30px;
+          "
+        >
+          FIND THE PERFECT FIT
+        </h2>
+
+        <div
+          class="border-bottom-primary mt-5"
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: rgb(160, 160, 160);
+            width: 35%;
+          "
+        ></div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="d-flex" style="height: 1068px; width: 1215px">
+          <!--2 DIVS:
+                    1. 2 images
+                    2. 3 images-->
+          <div style="height: 100%; width: 100%; padding-right: 15px">
+            <!--2 Images-->
+            <div style="height: 700px; width: 100%; padding-bottom: 15px">
+              <a href="#"
+                ><img
+                  src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/eye-square10.jpg"
+                  alt="eyeSquare.jpg"
+                  style="height: 100%; width: 100%"
+              /></a>
+            </div>
+            <div style="height: 350px; width: 100%">
+              <a href="#"
+                ><img
+                  src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/power-sun-square.jpg"
+                  alt="powersun.jpg"
+                  style="height: 100%; width: 100%"
+              /></a>
+            </div>
+          </div>
+
+          <div style="height: 100%; width: 100%">
+            <!--3 Images-->
+            <div style="height: 350px; width: 100%; padding-bottom: 15px">
+              <a href="#"
+                ><img
+                  src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/ce-square.jpg"
+                  alt="blucomp.jpg"
+                  style="height: 100%; width: 100%"
+              /></a>
+            </div>
+            <div style="height: 350px; width: 100%; padding-bottom: 15px">
+              <a href="#"
+                ><img
+                  src="https://static1.lenskart.com/media/desktop/img/Aug21/Desktop/sun-square.jpg"
+                  alt="sunglasses.jpg"
+                  style="height: 100%; width: 100%"
+              /></a>
+            </div>
+            <div style="height: 350px; width: 100%">
+              <a href="#"
+                ><img
+                  src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner03_TileDesktop.jpg"
+                  alt="digiHooper.jpg"
+                  style="height: 100%; width: 100%"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Introducing Ojos Code-->
+
+    <div id="introducingOjos">
+      <!--2 DIVS :
+        1. Heading of the Section
+        2. image with link enabled
+      -->
+      <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
+        <!--3 ELEMENTS : 
+          1. Line
+          2. Heading
+          3. Line-->
+        <div
+          class="border-bottom-primary mt-5"
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: rgb(160, 160, 160);
+            width: 25%;
+          "
+        ></div>
+
+        <h2
+          style="
+            text-align: center;
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 30px;
+          "
+        >
+          INTRODUCING OJOS WEAR - SUBSCRIBE &amp; SAVE
+        </h2>
+
+        <div
+          class="border-bottom-primary mt-5"
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: rgb(160, 160, 160);
+            width: 25%;
+          "
+        ></div>
+      </div>
+
+      <div>
+        <!--Image with link goes here-->
+        <a href="#" style="height: 1520px; width: 100%">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/May22/ojos-web.jpg"
+            alt="ojos"
+            style="height: 100%; width: 100%"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!--Contact Lenses and More Code -->
+
+    <div id="contactLens">
+      <!--2 DIVS :
+        1. Heading of the Section
+        2. images with link enabled
+      -->
+      <div class="sectionHeading d-flex justify-content-center gap-4 mt-5 mb-5">
+        <!--3 ELEMENTS : 
+          1. Line
+          2. Heading
+          3. Line-->
+        <div
+          class="border-bottom-primary mt-5"
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: rgb(160, 160, 160);
+            width: 33%;
+          "
+        ></div>
+
+        <h2
+          style="
+            text-align: center;
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 30px;
+          "
+        >
+          CONTACT LENSES &amp; MORE
+        </h2>
+
+        <div
+          class="border-bottom-primary mt-5"
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: rgb(160, 160, 160);
+            width: 33%;
+          "
+        ></div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="d-flex" style="height: 345px; width: 1215px">
+          <!--2 DIVS : LEFT AND RIGHT CONTAINING IMAGES-->
+          <div style="height: 100%; width: 100%; padding-right: 15px">
+            <a href="#"
+              ><img
+                src="https://static1.lenskart.com/media/desktop/img/June22/contact-lens-more.jpg"
+                alt="aqua.jpg"
+                style="height: 100%; width: 100%"
+            /></a>
+          </div>
+          <div style="height: 100%; width: 100%">
+            <a href="#"
+              ><img
+                src="https://static1.lenskart.com/media/desktop/img/June22/contact-lens-more-1.jpg"
+                alt="aqualens.jpg"
+                style="height: 100%; width: 100%"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 
 
      buy it yourway banner code
 
       -->
+
     <div>
       <!-- Buy it your way -->
       <div class="d-flex mt-5 mb-3" style="gap: 10px; align-items: center">
@@ -806,154 +2588,1134 @@
       /></a>
     </div>
 
-    <!-- 
-
-
-      first Eyeglasses carousel code 
-
-
-        -->
-    <div id="Eyeglass_Carousel">
-      <div
-        class="d-flex justify-content-between align-items-baseline"
-        style="margin-left: 90px; margin-right: 90px"
-      >
-        <p class="m-0" style="font-size: 20px; font-weight: 500">EYEGLASSES</p>
-        <a style="text-decoration: none" href="#">
-          <p class="m-0" style="font-size: 14px; color: #46a79d">
-            View Range
-          </p></a
-        >
-      </div>
+    <!-- first Eyeglasses carousel code -->
+    <div id="eyeglasses" style="margin: 2%">
       <div
         style="
-          height: 1px;
-          background-color: rgb(160, 160, 160);
-          flex: 1;
-          margin-left: 90px;
-          margin-right: 90px;
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
         "
-      ></div>
-      <div class="mt-5">
-        <!--Carousel with two slides, each slide containing three glasses cards-->
-        <div
-          id="carouselExample1"
-          class="carousel carousel-dark slide carousel-fade"
+      >
+        <h5>EYEGLASSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
         >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="vincenteyeglasses" class="carousel slide">
           <div class="carousel-inner">
-            <!--SLIDE 1-->
-            <div class="carousel-item">
+            <div class="carousel-item active" style="color: red">
               <div
-                class="container d-flex justify-content-center align-items-center gap-5"
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
               >
-                <img
-                  width="300px"
-                  height="150px"
-                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg"
-                  alt="eyeglass_slide1_jpg1"
-                />
-                <img
-                  width="300px"
-                  height="150px"
-                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg"
-                  alt="eyeglass_slide1_jpg2"
-                />
-                <img
-                  width="300px"
-                  height="150px"
-                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e13068-c6-eyeglasses_g_4835_03_03_2023.jpg"
-                  alt="eyeglass_slide1_jpg2"
-                />
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/transparent-gold-full-rim-rectangle-lenskart-air-essentials-la-e13517-c2-eyeglasses_csvfile-1695816767916-g_7546_27_09_2023.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e15417-w-c1-eyeglasses_csvfile-1701688470121-img_7893.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/lenskart-air-la-e13068-c6-eyeglasses_g_4835_03_03_2023.jpg"
+                    alt=""
+                /></a>
               </div>
             </div>
-            <!--SLIDE 2-->
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <div
-                class="container d-flex justify-content-center align-items-center gap-5"
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
               >
-                <img
-                  width="300px"
-                  height="150px"
-                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e16701-c1-eyeglasses_img_9071_04_01_2024.jpg"
-                  alt="eyeglass_slide2_jpg1"
-                />
-                <img
-                  width="300px"
-                  height="150px"
-                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13634-ful-ram-ale-metl-stlbr-c1-eyeglasaas_g_4921.jpg"
-                  alt="eyeglass_slide2_jpg2"
-                />
-                <img
-                  width="300px"
-                  height="150px"
-                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13037-f-im-rect-way-ace-crl-ue-trt-c6-eyeg_g_0532.jpg"
-                  alt="eyeglass_slide2_jpg2"
-                />
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e16701-c1-eyeglasses_img_9071_04_01_2024.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13634-ful-ram-ale-metl-stlbr-c1-eyeglasaas_g_4921.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-e13037-f-im-rect-way-ace-crl-ue-trt-c6-eyeg_g_0532.jpg"
+                    alt=""
+                /></a>
               </div>
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev btn"
             type="button"
-            data-bs-target="#carouselExample1"
+            data-bs-target="#vincenteyeglasses"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
           </button>
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExample1"
+            data-bs-target="#vincenteyeglasses"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
           </button>
         </div>
       </div>
     </div>
-    <!-- 
+    <!--sunglasses carousel code-->
+    <div id="vincent" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>SUNGLASSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="vincentsunglasses" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/tortoise-full-rim-wayfarer-vincent-chase-mirage-vc-s11167-l1-sunglasses_g_4350_12_07_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/black-grey-full-rim-wayfarer-vincent-chase-polarized-mirage-vc-5147/p-c108-sunglasses_g_6811_8_16_22.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/black-blue-gradient-full-rim-aviator-vincent-chase-polarized-vintage-vc-5158/p-c129-sunglasses_g_3774_7_05_22.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/gold-black-full-rim-aviator-vincent-chase-vintage-vc-5158/p-l2-polarized-sunglasses_g_3711_17_08_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/black-grey-gradient-full-rim-round-vincent-chase-havana-vc-s14523-c1-sunglasses_g_8610.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//v/i/brown-tortoise-brown-gradient-full-rim-round-vincent-chase-online-style-cast-pc-vc-s12585-c8-polarized-sunglasses_vincent-chase-vc-s12585-c8-sunglasses_sunglasses_img_2170_5july23.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#vincentsunglasses"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#vincentsunglasses"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- john jacobs banner code-->
+    <a href="#"
+      ><img
+        style="height: 100%; width: 100%"
+        src="https://static1.lenskart.com/media/desktop/img/Nov22/Updated%20brand%20banner%20jj%20.jpg"
+        alt=""
+    /></a>
+    <div id="sunglasses" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>EYEGLASSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
 
+      <div>
+        <div id="johneyeglasses" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e10235-c7-eyeglasses_g_2374.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13343-c2-eyeglasses_g_5786.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-rimless-jj-e12565-c3-eyeglasses_john-jacobs-rimless-jj-e12565-c3-eyeglasses_g_3253.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/john-jacobs-jj-e15827-c1-eyeglasses_csvfile-1692011878926-g_8498.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-e13346-c2-eyeglasses_g_5793.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/gunmetal--black-full-rim-rectangle-john-jacobs-supreme-steel-jj-e11540-c6-eyeglasses_g_7769_25_04_2023.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#johneyeglasses"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#johneyeglasses"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="johnjocabs" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>SUNGLASSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="johnsunglasses" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Gunmetal-Black-Full-Rim-Square-John-Jacobs-JJ-Tints-JJ-S13145-C2-Polarized-Sunglasses_john-jacobs-jj-e13145-c2-sunglasses_g_183318_02_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/grey-gunmetal-full-rim-hexagonal-john-jacobs-jj-tints-jj-s12472--c2-sunglasses_john-jacobs-jj-s12472-c2-sunglasses_sunglasses_g_1972_1_1_05_july23.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12808-c2-sunglasses_g_8839.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12808-c1-sunglasses_g_8863.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Gold-Green-Full-Rim-Aviator-John-Jacobs-JJ-Tints-JJ-S12474-C2-Polarized-Sunglasses_john-jacobs-jj-s12474-c2-sunglasses_g_219718_02_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Black-Grey-Full-Rim-Aviator-John-Jacobs-JJ-Tints-JJ-S12474-C1-Polarized-Sunglasses_john-jacobs-jj-s12474-c1-sunglasses_sunglasses_g_1852_1_1_118_02_2022.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#johnsunglasses"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#johnsunglasses"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-          sunglasses carousel code
+    <!-- lenskart air banner code here-->
+    <a href="#"
+      ><img
+        style="height: 100%; width: 100%"
+        src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-AIR-Banner.jpg"
+        alt=""
+    /></a>
+    <div id="lenskartair" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>EYEGLASSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="airsunglasses" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Gunmetal-Black-Full-Rim-Square-John-Jacobs-JJ-Tints-JJ-S13145-C2-Polarized-Sunglasses_john-jacobs-jj-e13145-c2-sunglasses_g_183318_02_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/grey-gunmetal-full-rim-hexagonal-john-jacobs-jj-tints-jj-s12472--c2-sunglasses_john-jacobs-jj-s12472-c2-sunglasses_sunglasses_g_1972_1_1_05_july23.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12808-c2-sunglasses_g_8839.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/o/john-jacobs-jj-s12808-c1-sunglasses_g_8863.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Gold-Green-Full-Rim-Aviator-John-Jacobs-JJ-Tints-JJ-S12474-C2-Polarized-Sunglasses_john-jacobs-jj-s12474-c2-sunglasses_g_219718_02_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//j/i/Black-Grey-Full-Rim-Aviator-John-Jacobs-JJ-Tints-JJ-S12474-C1-Polarized-Sunglasses_john-jacobs-jj-s12474-c1-sunglasses_sunglasses_g_1852_1_1_118_02_2022.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#airsunglasses"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#airsunglasses"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <a href="#"
+      ><img
+        src="https://static1.lenskart.com/media/desktop/img/Aug21/25-Aug/LK-Readers-Banner.jpg"
+        style="width: 100%; margin-top: 2%"
+        alt="@"
+    /></a>
+    <div id="lenskartreader" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>EYEGLASSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="readerglasses" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-e11058-c3c-reading-eyeglass-(only-for--2.00-power)_g_408105_03_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-rectangle-lenskart-readers-lr-e11058-c4-b-reading-eyeglass-(only-for--1.75-power)_g_1115_14_06_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-e11058-c3b-reading-eyeglass-(only-for--1.50-power)_g_410805_03_2022.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-e11058-c3d-reading-eyeglass-(only-for--2.50-power)_g_409905_03_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-full-rim-rectangle-lenskart-readers-lr-e11058-c4-a-reading-eyeglasses-(only-for--1.25-power)_g_1943_6_16_22.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//l/i/black-rectangle-lenskart-readers-lr-6967-c1b-reading-eyeglass-(only-for--1.50-power)_g_416205_03_2022.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#readerglasses"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#readerglasses"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <a href="#"
+      ><img
+        src="https://static1.lenskart.com/media/desktop/img/Nov20/25-Nov/Banner05_Final2ndDec21.jpg"
+        style="width: 100%; margin-top: 2%"
+    /></a>
 
-         -->
+    <div id="hooperbanner" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>WITH POWER COMPUTER BLU LENSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="hooper" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-kids-(5-8-yrs)-hooper-hp-d10009m-c2_g_3417_5_27_22.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-blue-full-rim-rectangle-kids-(5-8-yrs)-hooper-hp-d10008m-c1_g_3410_5_27_22.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/blue-block-phone-&-computer-glasses:-blue-full-rim-cat-eye-kids-(5-8-yrs)-hooper-hp-d10010m-c2_g_3558_5_27_22.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:-blue-transparent-purple-full-rim-rectangle-kids-(8-12-yrs)-hooper-hp-d10016l-c5_g_9815_27_04_2022.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src=" https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/kids-glasses:-blue-red-full-rim-rectangle-kids-8-12-yrs-hooper-superhero-lk-d16280-c1_img_4278_29_11_2023.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/lenskart-lk-d16285-c1-eyeglasses_img_4099_01_12_2023.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#hooper"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hooper"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="hooperbanner2" style="margin: 2%">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10%;
+          margin-right: 7%;
+        "
+      >
+        <h5>WITH ZERO POWER COMPUTER BLU LENSES</h5>
+        <a style="text-decoration: none; color: rgb(50, 156, 146)" href="#"
+          ><h5>View Range</h5></a
+        >
+      </div>
+      <div>
+        <hr
+          style="
+            border: 1px solid grey;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-right: 7%;
+          "
+        />
+      </div>
+      <div>
+        <div id="hooper2" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="color: red">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15910m-c2-eyeglasses_g-1882_12_09_2023.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15911m-c2-eyeglasses_g-1943_12_09_2023.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15912m-c2-eyeglasses_g_1906_12_09_2023.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                style="
+                  display: grid;
+                  width: 80%;
+                  margin: auto;
+                  grid-template-columns: 1fr 1fr 1fr;
+                "
+              >
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15913l-c1-eyeglasses_g_1913_12_09_2023.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15913l-c2-eyeglasses_g-1921_12_09_2023.jpg"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/371x178/9df78eab33525d08d6e5fb8d27136e95//h/i/hooper-hp-e15914l-c1-eyeglasses_g_1929_12_09_2023.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev btn"
+            type="button"
+            data-bs-target="#hooper2"
+            data-bs-slide="prev"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-prev"
+              currentSlide="3"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="M10 1 1.667 8.5 10 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hooper2"
+            data-bs-slide="next"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-role="none"
+              class="slick-arrow slick-next"
+              currentSlide="0"
+              slideCount="6"
+              style="display: block"
+            >
+              <path
+                d="m1 1 8.333 7.5L1 16"
+                stroke="#666"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <!-- 
-
-
-          john jacobs banner code
-
-          -->
-
-    <!-- 
-
-
-
-
-          lenskart air banner code here
-
-           -->
-
-    <!-- 
-
-
-
-          
-             lenskart reader code
-
-            -->
-
-    <!-- 
-
-
-             hooper banner code
-
-
-             -->
-
-    <!-- 
+    <!--
 
 
                 with zero power carousel code here 
@@ -973,19 +3735,55 @@
 
              -->
 
-    <!-- 
+    <!--
 
                contact flyer code here 
 
               -->
 
-    <!-- 
-
-
-              div with iframes code here
-
-
-               -->
+    <!-- div with iframes code here-->
+    <div class="w100 justcenter" style="background: #fff092">
+      <h3
+        style="
+          font-size: 30px;
+          padding: 50px 0 10px 0;
+          font-family: LKFuturaStd-Medium, Arial, sans-serif;
+          text-align: center;
+        "
+      >
+        MEET OUR HAPPY CUSTOMERS
+      </h3>
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      >
+        <div style="width: 31%; margin-left: 5%">
+          <iframe
+            src="https://www.youtube.com/embed/HYPqf_eVvvM?autoplay=0"
+            width="100%"
+            height="280"
+          ></iframe>
+        </div>
+        <div style="padding: 0 3%; width: 38%; margin: auto">
+          <iframe
+            src="https://www.youtube.com/embed/SQm3RxXRunw?autoplay=0"
+            width="100%"
+            height="280"
+          ></iframe>
+        </div>
+        <div style="width: 31%; margin-right: 5%">
+          <iframe
+            src="https://www.youtube.com/embed/IZpUQ-S_LcM?autoplay=0"
+            width="100%"
+            height="280"
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
     <!-- 
 
