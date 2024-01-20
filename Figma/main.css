@@ -1,3 +1,12 @@
+#dicta {
+  width: 1440px;
+  height: 496px;
+  background-color: #434CCC;
+  box-sizing: border-box;
+}
 
-
-/*# sourceMappingURL=main.css.map */
+#dictaImage {
+  width: 634px;
+  height: 951px;
+  flex-shrink: 0;
+}/*# sourceMappingURL=Main.css.map */
