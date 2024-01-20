@@ -36,6 +36,23 @@
     ></script>
 
     <style>
+      /* Style for header and nav bar */
+      .headerTop > a {
+        font-size: 0.62rem;
+        text-decoration: none;
+        color: black;
+      }
+      .headerTop > p {
+        font-size: 0.62rem;
+        margin: 0;
+      }
+      .headerBottom > a {
+        text-decoration: none;
+      }
+      .headerBottom > a > p {
+        font-size: 0.75rem;
+        color: black;
+      }
       /* Styling for wear the trend carousel */
 
       #wearthetrend > div > div:nth-of-type(1) {
@@ -488,7 +505,8 @@
 
     <!--NAV BAR DROP DOWN-->
     <div
-      class="container-fluid d-flex justify-content-between align-items-center px-4 sticky-top"
+      class="container-fluid d-flex justify-content-between align-items-center px-4"
+      style="position: fixed; top: 6rem"
       id="navBarDrop"
     >
       <!--div 1 CONTAINING ALL THE OPTIONS ON LEFT-->
