@@ -51,7 +51,6 @@ body, h1, h2, h3, p, ul, li {
     text-transform: uppercase;
     color:white;
     margin-top:95px;
-    
 }
 .FormContainer>div:nth-child(2)>P:nth-child(2){
     font-family: 'DM Serif Display';
@@ -81,6 +80,7 @@ body, h1, h2, h3, p, ul, li {
 }
 .FormContainer>div:nth-child(2)>input:nth-child(3)::placeholder{
     padding-left:16px;
+    
 }
 .FormContainer>div:nth-child(2)>input:nth-child(4){
     width: 470px;
@@ -118,10 +118,11 @@ body, h1, h2, h3, p, ul, li {
         height:1056px;
         display:flex;
         flex-direction:column;
+        justify-content:space-between;
         align-items:center;
     }
     .FormContainer>div{
-        width:100%;
+        width:100%; 
     }
     .FormContainer>div:nth-child(1){
         padding-top:80px;
@@ -152,6 +153,9 @@ body, h1, h2, h3, p, ul, li {
     }
     .FormContainer>div:nth-child(2)>input:nth-child(4){
         width: 346px;
+    }
+    .FormContainer>div:nth-child(2)>button{
+        margin-bottom:64px;
     }
    
 }

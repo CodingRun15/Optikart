@@ -146,6 +146,7 @@ body, h1, h2, h3, p, ul, li {
     height: 1056px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
   .FormContainer > div {
@@ -181,6 +182,7 @@ body, h1, h2, h3, p, ul, li {
   .FormContainer > div:nth-child(2) > input:nth-child(4) {
     width: 346px;
   }
+  .FormContainer > div:nth-child(2) > button {
+    margin-bottom: 64px;
+  }
 }/*# sourceMappingURL=Main.css.map */
-
-
