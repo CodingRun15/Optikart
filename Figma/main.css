@@ -2,13 +2,53 @@
   width: 1440px;
   height: 496px;
   background-color: #434ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 127px 135px 121px 135px;
 }
 
 #dictaImage {
   width: 634px;
   height: 951px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 65px;
+}
+#dictaImage button {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #434ccc;
+  border: 1px solid #7b82db;
+  border-radius: 5px;
+}
+
+.dicta2 {
+  position: absolute;
+  margin-left: 137px;
+}
+
+.dictachild {
+  margin-left: 452px;
+}
+.dictachild h5 {
+  width: 153px;
+  height: 24px;
+  color: var(--Text_White, #fff);
+  font-family: "DM Sans";
+}
+.dictachild h4 {
+  width: 670px;
+  height: 107px;
+  flex-shrink: 0;
+  color: var(--Text_White, #fff);
+  margin-top: 33px;
+  margin-bottom: 0px;
 }
 
 /* Styling for FIGMA Header Section */
@@ -262,7 +302,7 @@ body {
   margin-top: 48px;
 }
 
-@media all and (max-width: 376px) {
+@media all and (max-width: 600px) {
   #header > .container:nth-child(1) {
     height: 768px;
   }
