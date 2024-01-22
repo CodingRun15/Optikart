@@ -1,12 +1,12 @@
-1
+
 # Introduction: 
 
 This project was created towards the Construct Week project presentation goal.
 It was a collaborative effort which was created by a team of five. 
-#### we created a clone of Lenskart titled Optikart using Bootstrap and a figma-based webpage using Sass.
+#### We created a clone of Lenskart titled Optikart using Bootstrap and a Figma-based webpage using Sass.
 
 # Objectives:
-The objective behind creating the Optikart website was to allow users to explore and shop online specs, lenses or other optacles-related utilities which 
+The objective behind creating the Optikart website was to allow users to explore and shop online specs, lenses or other opticals-related utilities which 
 is required all the time.
 For the figma part, the objective was to create a pixel-perfect design to bridge the gap between a designer a user and a developer.
 You can visit the website from the links given below
