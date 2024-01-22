@@ -63,5 +63,18 @@ Precision meets creativity in our Figma-based project. Crafted with pixel-perfec
 ![Screenshot 2024-01-22 164816](https://github.com/CodingRun15/Web-204-Project/assets/150140715/63f28ae6-12ad-4ca9-a409-93fce5161ca5)
 
 
+### Responsiveness : 
+
+![Screenshot 2024-01-22 170103](https://github.com/CodingRun15/Web-204-Project/assets/150140715/cbbff2ac-b9d9-43ee-8a9c-ab81a37eb155)
+
+![Screenshot 2024-01-22 170111](https://github.com/CodingRun15/Web-204-Project/assets/150140715/e35ed536-ecd1-4b9d-b56c-7d9367a8e141)
+
+![Screenshot 2024-01-22 170118](https://github.com/CodingRun15/Web-204-Project/assets/150140715/a3537c3a-8cbb-4635-9d64-29195ba0fdce)
+
+![Screenshot 2024-01-22 170134](https://github.com/CodingRun15/Web-204-Project/assets/150140715/3a078de0-c47a-4340-b1c3-5783ba3db386)
+
+![Screenshot 2024-01-22 170146](https://github.com/CodingRun15/Web-204-Project/assets/150140715/50e6ffd8-ce28-4fdf-b9dd-a575a31975a9)
+
+
 ### Tech stack used:
 HTML, CSS, SASS
