@@ -11,5 +11,5 @@ You can visit the website from the links given below
 For optikart: HTML, CSS, BOOTSTRAP
 For figma based webpage:  HTML, CSS, SASS 
 #links can be found here 
-# optikart.netlify.app
-# figmaworks.netlify.app
+# https://optikart.netlify.app
+# https://figmaworks.netlify.app
