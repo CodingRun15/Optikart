@@ -13,10 +13,7 @@ For figma based webpage:  HTML, CSS, SASS
 #links can be found here 
 # optikart.netlify.app
 # figmaworks.netlify.app
-
-
-
-![Alt text](<../../../Desktop/Screenshot 2024-01-22 161740.png>)
-![Alt text](<../../../Desktop/Screenshot 2024-01-22 163046.png>)
-![Alt text](<../../../Desktop/Screenshot 2024-01-22 163126.png>)
-![Alt text](<../../../Desktop/Screenshot 2024-01-22 163201.png>)
+![Alt text](<../Web-204-Project/screenshots/Screenshot 2024-01-22 161740.png>)
+![Alt text](<../Web-204-Project/screenshots/Screenshot 2024-01-22 163046.png>)
+![Alt text](<../Web-204-Project/screenshots/Screenshot 2024-01-22 163126.png>)
+![Alt text](<../Web-204-Project/screenshots/Screenshot 2024-01-22 163201.png>)
