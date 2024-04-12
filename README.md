@@ -14,40 +14,6 @@ Optikart: https://optikart.netlify.app/
 ```
 ├── Figma/
 │   ├── Images/
-│   │   ├── Attachement.svg
-│   │   ├── Bitmap (1).png
-│   │   ├── Bitmap (2).png
-│   │   ├── Bitmap (2).svg
-│   │   ├── Bitmap (3).png
-│   │   ├── Bitmap (3).svg
-│   │   ├── Bitmap (4).png
-│   │   ├── Bitmap (4).svg
-│   │   ├── Bitmap.png
-│   │   ├── Bitmap.svg
-│   │   ├── Combined Shape (1).svg
-│   │   ├── Combined Shape (2).svg
-│   │   ├── Combined Shape (3).svg
-│   │   ├── Combined Shape.svg
-│   │   ├── Fill 16.svg
-│   │   ├── MapIcon.png
-│   │   ├── Path (1).svg
-│   │   ├── Path.svg
-│   │   ├── Shape.svg
-│   │   ├── facebook.png
-│   │   ├── footer1.png
-│   │   ├── footer2.png
-│   │   ├── instagram.png
-│   │   ├── laptop.svg
-│   │   ├── map.png
-│   │   ├── pic1.png
-│   │   ├── topSection 24.svg
-│   │   ├── topSection Box.svg
-│   │   ├── topSection Clip-1.svg
-│   │   ├── topSection Logo.svg
-│   │   ├── topSection Rectangle.svg
-│   │   ├── topSection Truck.svg
-│   │   ├── topSection arrow.svg
-│   │   └── twitter.png
 │   ├── Main.html
 │   ├── Main.scss
 │   ├── main.css
@@ -57,10 +23,6 @@ Optikart: https://optikart.netlify.app/
 │   └── Optikart_logo.jpg
 ├── README.md
 └── screenshots/
-│   ├── Screenshot 2024-01-22 161740.png
-│   ├── Screenshot 2024-01-22 163046.png
-│   ├── Screenshot 2024-01-22 163126.png
-│   └── Screenshot 2024-01-22 163201.png
 ```
 
 ## Video Walkthrough of the project
@@ -150,3 +112,11 @@ A video walkthrough of the project and some of its features can be found [here.]
 - HTML
 - CSS
 - Sass
+
+## Contributors
+
+- Harsh Kumar 
+- Abhinav Tyagi
+- Shubham
+- Krishna Pratap
+- Ajay Choudhary
