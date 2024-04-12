@@ -45,7 +45,7 @@ optikart.netlify.app
 
 
 ### Tech stack used:
-HTML, CSS, BOOTSTRAP
+HTML, CSS, Bootstrap
 
 # Figma-based Project : 
 
@@ -80,4 +80,4 @@ Precision meets creativity in our Figma-based project. Crafted with pixel-perfec
 
 
 ### Tech stack used:
-HTML, CSS, SASS
+HTML, CSS, Sass
