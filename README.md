@@ -1,59 +1,125 @@
+# Optikart
 
-# Introduction: 
-
-This project was created towards the Construct Week project presentation goal.
-It was a collaborative effort which was created by a team of five. 
-#### We created a clone of Lenskart titled Optikart using Bootstrap and a Figma-based webpage using Sass.
-
-# Project Type
-Frontend
-
-# Objectives:
-The objective behind creating the Optikart website was to allow users to explore and shop online specs, lenses or other opticals-related utilities which 
-is required all the time.
-For the figma part, the objective was to create a pixel-perfect design to bridge the gap between a designer a user and a developer.
-You can visit the website from the links given below
-
-
-# Optikart:
-
+## Introduction
 Welcome to Optikart, your go-to online destination for a visionary shopping experience. Discover an extensive array of eye accessories, from sophisticated eyeglasses and trendy sunglasses to hassle-free contact lenses. At Optikart, we prioritize both style and eye health, offering a carefully curated selection of products from renowned brands. Our commitment goes beyond fashion; we provide access to seasoned eye experts, ensuring you make informed choices for your vision needs. Elevate your style with Optikart's fashion-forward frames, all while receiving expert guidance. Choose Optikart for a seamless blend of clarity, style, and expertise – because your eyes deserve the best!
 
-### Visit us here :  
-optikart.netlify.app
+## Project Type
+Frontend
 
-## Important sections of our landing page : 
+## Deplolyed App
+Optikart: https://optikart.netlify.app/
 
-### Header 
+## Directory Structure
+
+```
+├── Figma/
+│   ├── Images/
+│   │   ├── Attachement.svg
+│   │   ├── Bitmap (1).png
+│   │   ├── Bitmap (2).png
+│   │   ├── Bitmap (2).svg
+│   │   ├── Bitmap (3).png
+│   │   ├── Bitmap (3).svg
+│   │   ├── Bitmap (4).png
+│   │   ├── Bitmap (4).svg
+│   │   ├── Bitmap.png
+│   │   ├── Bitmap.svg
+│   │   ├── Combined Shape (1).svg
+│   │   ├── Combined Shape (2).svg
+│   │   ├── Combined Shape (3).svg
+│   │   ├── Combined Shape.svg
+│   │   ├── Fill 16.svg
+│   │   ├── MapIcon.png
+│   │   ├── Path (1).svg
+│   │   ├── Path.svg
+│   │   ├── Shape.svg
+│   │   ├── facebook.png
+│   │   ├── footer1.png
+│   │   ├── footer2.png
+│   │   ├── instagram.png
+│   │   ├── laptop.svg
+│   │   ├── map.png
+│   │   ├── pic1.png
+│   │   ├── topSection 24.svg
+│   │   ├── topSection Box.svg
+│   │   ├── topSection Clip-1.svg
+│   │   ├── topSection Logo.svg
+│   │   ├── topSection Rectangle.svg
+│   │   ├── topSection Truck.svg
+│   │   ├── topSection arrow.svg
+│   │   └── twitter.png
+│   ├── Main.html
+│   ├── Main.scss
+│   ├── main.css
+│   └── main.css.map
+├── Lenskart/
+│   ├── Main.html
+│   └── Optikart_logo.jpg
+├── README.md
+└── screenshots/
+│   ├── Screenshot 2024-01-22 161740.png
+│   ├── Screenshot 2024-01-22 163046.png
+│   ├── Screenshot 2024-01-22 163126.png
+│   └── Screenshot 2024-01-22 163201.png
+```
+
+## Video Walkthrough of the project
+A video walkthrough of the project and some of its features can be found [here.](https://youtu.be/5Q2Vf75PNhM)
+
+## Features
+- Dropdown Menu
+- Carousels
+- Complex Grid Layout
+
+## Usage
+
+#### Header 
 
 ![Screenshot 2024-01-22 163345](https://github.com/CodingRun15/Web-204-Project/assets/150140715/35f928a8-e02b-4312-a2b4-57f1ee83d7d3)
 
-### DropDown nav bar
+#### DropDown nav bar
 
 ![Screenshot 2024-01-22 163414](https://github.com/CodingRun15/Web-204-Project/assets/150140715/81b375d3-fc72-4e5e-8ffc-e0c6056a8c3a)
 
-### Carousels
+#### Carousels
 
 ![Screenshot 2024-01-22 163429](https://github.com/CodingRun15/Web-204-Project/assets/150140715/d1df70cc-071a-44ca-b1b4-d452476b832b)
 
 ![Screenshot 2024-01-22 163521](https://github.com/CodingRun15/Web-204-Project/assets/150140715/64baf281-ac5a-432e-978b-d218bafa6da1)
 
-### Grids
+#### Grids
 
 ![Screenshot 2024-01-22 163459](https://github.com/CodingRun15/Web-204-Project/assets/150140715/eb4730b8-1b39-471c-8540-e280869d2963)
 ![Screenshot 2024-01-22 163509](https://github.com/CodingRun15/Web-204-Project/assets/150140715/2b6c830f-99d5-4c05-b4eb-4bd7413a7228)
 
+## Technology Stack
 
-### Tech stack used:
-HTML, CSS, Bootstrap
+- HTML
+- CSS
+- Bootstrap
 
-# Figma-based Project : 
 
+
+# FigmaWorks :
+
+## Introduction
 Precision meets creativity in our Figma-based project. Crafted with pixel-perfect detail, it's a seamless fusion of design and functionality, ensuring a flawless digital experience. Elevate your vision today with unparalleled excellence in every pixel.
 
-## Visit us here: figmaworks.netlify.app
+## Project Type
+Frontend
 
-## A Quick overview : 
+## Deployed App
+FigmaWorks: https://figmaworks.netlify.app/
+
+## Video Walkthrough of the project
+A video walkthrough of the project and some of its features can be found [here.](https://youtu.be/5Q2Vf75PNhM)
+
+## Features
+- Responsive
+- Figma-based Pixel Perfect Design
+- Complex Grid Layout
+
+## Usage : 
 
 ![Screenshot 2024-01-22 164732](https://github.com/CodingRun15/Web-204-Project/assets/150140715/8b5cd79e-1acc-4ebf-9169-3b6d3f3bb00f)
 
@@ -66,7 +132,7 @@ Precision meets creativity in our Figma-based project. Crafted with pixel-perfec
 ![Screenshot 2024-01-22 164816](https://github.com/CodingRun15/Web-204-Project/assets/150140715/63f28ae6-12ad-4ca9-a409-93fce5161ca5)
 
 
-### Responsiveness : 
+#### Responsiveness : 
 
 ![Screenshot 2024-01-22 170103](https://github.com/CodingRun15/Web-204-Project/assets/150140715/cbbff2ac-b9d9-43ee-8a9c-ab81a37eb155)
 
@@ -79,5 +145,8 @@ Precision meets creativity in our Figma-based project. Crafted with pixel-perfec
 ![Screenshot 2024-01-22 170146](https://github.com/CodingRun15/Web-204-Project/assets/150140715/50e6ffd8-ce28-4fdf-b9dd-a575a31975a9)
 
 
-### Tech stack used:
-HTML, CSS, Sass
+## Technology Stack
+
+- HTML
+- CSS
+- Sass
