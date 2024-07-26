@@ -2,7 +2,7 @@
 
 ## Introduction
 Welcome to Optikart, your go-to online destination for a visionary shopping experience. Discover an extensive array of eye accessories, from sophisticated eyeglasses and trendy sunglasses to hassle-free contact lenses. At Optikart, we prioritize both style and eye health, offering a carefully curated selection of products from renowned brands. Our commitment goes beyond fashion; we provide access to seasoned eye experts, ensuring you make informed choices for your vision needs. Elevate your style with Optikart's fashion-forward frames, all while receiving expert guidance. Choose Optikart for a seamless blend of clarity, style, and expertise – because your eyes deserve the best!
-Optikart offers a curated selection of stylish eyeglasses, trendy sunglasses, and convenient contact lenses. Combining fashion with expert eye care, we provide top brands and guidance for your vision needs.
+
 
 ## Project Type
 Frontend
